@@ -1540,7 +1540,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;-webkit-box-shado
 .srkHeaderTop .boxes .infoBox .item{margin-bottom:10px}
 .srkHeaderTop .boxes .searchBox input{width:100%}
 }
-.headerNavWrapper{height:70px;background:#fff;transition:ease all .4s;display:block;-webkit-transition:ease all .4s;-moz-transition:ease all .4s;-o-transition:ease all .4s}
+.headerNavWrapper{height:70px;background:#fff;transition:ease all .4s;display:block;-webkit-transition:ease all .4s;-moz-transition:ease all .4s;-o-transition:ease all .4s;z-index: 300;}
 .headerNavWrapper.pft{position:fixed;top:0;width:100%;z-index: 500;}
 .srkHeaderNav{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .srkLogo{display:block;width:170px;margin-right:15%;transition:all .4s ease-in-out;-webkit-transition:all .4s ease-in-out;-moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
@@ -1552,7 +1552,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;-webkit-box-shado
 .srkMainMenu li>a .iconfont{font-size:12px;margin-left:8px}
 .srkMainMenu li>a.there-are-submenus{width:100%}
 .srkMainMenu li.on .srkASubmenus{display:block}
-.srkASubmenus{position:absolute;top:70px;padding:7px 0;background:#fff;border-radius:0 0 4px 4px!important;-webkit-box-shadow:0 5px 12px rgb(0 0 0 / 20%);box-shadow:0 5px 12px rgb(0 0 0 / 20%);display:none;-webkit-animation:.3s linear 0s 1 normal none running tsItem;animation:.3s linear 0s 1 normal none running tsItem}
+.srkASubmenus{position:absolute;top:70px;padding:7px 0;background:#fff;border-radius:0 0 4px 4px!important;-webkit-box-shadow:0 5px 12px rgb(0 0 0 / 20%);box-shadow:0 5px 12px rgb(0 0 0 / 20%);display:none;-webkit-animation:.3s linear 0s 1 normal none running tsItem;animation:.3s linear 0s 1 normal none running tsItem;z-index: 1;}
 @-webkit-keyframes tsItem{0%{opacity:0}
 100%{opacity:1}
 }
