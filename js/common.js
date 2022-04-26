@@ -82,7 +82,7 @@ jQuery(document).ready(function ($) {
         })
     }
 
-    $('.srkFooterMore').on('click', function () {
+    $('.srkChangeMore').on('click', function () {
         $(this).toggleClass('show')
     })
 
