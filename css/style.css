@@ -164,3 +164,103 @@
 .srkSidebarProductCon li a {
     font-size: 14px;
 }
+
+.srkSidebarFeaturedCon {
+}
+.srkSidebarFeaturedCon li {
+    width: 100%;
+    overflow: hidden;
+    margin: 8px 0;
+    display: flex;
+}
+.srkSidebarFeaturedCon li .img {
+    width: 40%;
+    overflow: hidden;
+}
+.srkSidebarFeaturedCon li .img a {
+}
+.srkSidebarFeaturedCon li .img a img {
+    max-width: 100%;
+    display: block;
+}
+.srkSidebarFeaturedCon li .info {
+    width: 60%;
+    flex: 1;
+}
+.srkSidebarFeaturedCon li .info .text {
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 12px;
+    font-weight: normal;
+    max-height: 54px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.srkSidebarFeaturedCon li .info .text a {
+    display: block;
+}
+.srkSidebarFeaturedCon li .info .more {
+    margin-left: 15px;
+    display: block;
+}
+.srkSidebarFeaturedCon li .info .more a {
+    background-color: #ff8c00;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    padding: 0 15px;
+    display: inline-block;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+}
+.srkSidebarFeaturedCon li .info .more a:hover {
+    background-color: #363f4d;
+}
+@media (max-width: 767px) {
+    .srkSidebarFeaturedCon li {
+        flex-direction: column;
+    }
+    .srkSidebarFeaturedCon li .img,
+    .srkSidebarFeaturedCon li .info {
+        width: 100%;
+    }
+    .srkSidebarFeaturedCon li .info .text,
+    .srkSidebarFeaturedCon li .info .more {
+        margin-left: 0;
+    }
+}
+
+.srkSidebarContactCon {
+}
+.srkSidebarContactCon li {
+    overflow: hidden;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.srkSidebarContactCon li .icon {
+    color: #ff8c00;
+    font-weight: bold;
+    background: #f7f7f0;
+    float: left;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 35px;
+}
+.srkSidebarContactCon li .icon i {
+    font-size: 16px;
+}
+.srkSidebarContactCon li a {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.2;
+    padding-left: 10px;
+    position: relative;
+}

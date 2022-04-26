@@ -194,76 +194,81 @@ input.nput:-internal-autofill-selected {
     -webkit-text-fill-color: var(--font-color) !important;
     transition: background-color 5000s ease-in-out 0s !important;
     font-size: 14px !important;
-} 
+}
 @font-face {
     font-family: "iconfont"; /* Project id 3356379 */
-    src: url('../font/iconfont.woff2?t=1650866372496') format('woff2'),
-         url('../font/iconfont.woff?t=1650866372496') format('woff'),
-         url('../font/iconfont.ttf?t=1650866372496') format('truetype');
-  }
-  
-  .iconfont {
+    src: url("../font/iconfont.woff2?t=1650957827082") format("woff2"), url("../font/iconfont.woff?t=1650957827082") format("woff"),
+        url("../font/iconfont.ttf?t=1650957827082") format("truetype");
+}
+
+.iconfont {
     font-family: "iconfont" !important;
     font-size: 16px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-sanjiao1:before {
+}
+
+.icon-faxchuanzhen:before {
+    content: "\e6e5";
+}
+
+.icon-xiangyou1:before {
+    content: "\e775";
+}
+
+.icon-sanjiao1:before {
     content: "\e600";
-  }
-  
-  .icon-31dianhua:before {
+}
+
+.icon-31dianhua:before {
     content: "\e601";
-  }
-  
-  .icon-xialajiantou:before {
+}
+
+.icon-xialajiantou:before {
     content: "\e638";
-  }
-  
-  .icon-zuo:before {
+}
+
+.icon-zuo:before {
     content: "\e63c";
-  }
-  
-  .icon-youxiang:before {
+}
+
+.icon-youxiang:before {
     content: "\e908";
-  }
-  
-  .icon-jiahao:before {
+}
+
+.icon-jiahao:before {
     content: "\e61c";
-  }
-  
-  .icon-sousuo:before {
+}
+
+.icon-sousuo:before {
     content: "\e60f";
-  }
-  
-  .icon-shangshuangjiantou:before {
+}
+
+.icon-shangshuangjiantou:before {
     content: "\e617";
-  }
-  
-  .icon-youtube:before {
+}
+
+.icon-youtube:before {
     content: "\e87c";
-  }
-  
-  .icon-pinterest:before {
+}
+
+.icon-pinterest:before {
     content: "\e640";
-  }
-  
-  .icon-twitter:before {
+}
+
+.icon-twitter:before {
     content: "\e882";
-  }
-  
-  .icon-facebook:before {
+}
+
+.icon-facebook:before {
     content: "\e8e7";
-  }
-  
-  .icon-instagram:before {
+}
+
+.icon-instagram:before {
     content: "\e8f9";
-  }
-  
-  .icon-linkedin:before {
+}
+
+.icon-linkedin:before {
     content: "\e978";
-  }
-  
-  
+}
