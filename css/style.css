@@ -51,3 +51,38 @@
         margin-top: 0;
     }
 }
+
+.srkInnerPageWrap {
+}
+.srkInnerPageContent {
+    width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+    display: flex;
+}
+.srkInnerPageRight,
+.srkInnerPageLifht {
+    margin-bottom: 40px;
+}
+.srkInnerPageRight {
+    width: 74%;
+    flex: 1;
+}
+.srkInnerPageLifht {
+    width: 26%;
+}
+@media (max-width: 767px) {
+    .srkInnerPageContent {
+        flex-direction: column-reverse;
+    }
+    .srkInnerPageRight,
+    .srkInnerPageLifht {
+        margin-bottom: 20px;
+    }
+    .srkInnerPageRight {
+        width: 100%;
+    }
+    .srkInnerPageLifht {
+        width: 100%;
+    }
+}
