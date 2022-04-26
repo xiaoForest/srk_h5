@@ -16,3 +16,38 @@
     overflow: hidden;
     background: #f7f7f0;
 }
+
+.srkBreadCrumbWrap {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 104px;
+}
+.srkBreadCrumb {
+    display: flex;
+    align-items: center;
+}
+.srkBreadCrumb li {
+    font-size: 14px;
+    line-height: 1.2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.srkBreadCrumb li a {
+}
+.srkBreadCrumb li i {
+    font-size: 18px;
+    display: block;
+    transform: rotate(270deg);
+}
+.srkBreadCrumb li span {
+    color: #333;
+}
+
+@media (max-width: 767px) {
+    .srkBreadCrumbWrap {
+        margin-top: 0;
+    }
+}
