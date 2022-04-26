@@ -1521,6 +1521,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;-webkit-box-shado
 .srkFooterCatalogue{display:none}
 .srkChangeMore.show~.srkFooterCatalogue{display:-webkit-box;display:-ms-flexbox;display:flex}
 .srkChangeMore span{text-transform:uppercase;color:#222;font-size:16px;line-height:20px}
+.srkChangeMore button {background:none;}
 .srkChangeMore i{font-size:24px;color:#222;display:block;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);-webkit-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}
 .srkChangeMore.show i{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}
 .srkFooterSecondary>div{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
