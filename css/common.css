@@ -1535,7 +1535,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;-webkit-box-shado
 .srkHeaderTop .boxes .infoBox .item i{font-size:20px;margin-right:10px}
 .srkHeaderTop .boxes .infoBox .item a{font-size:14px}
 .srkHeaderTop .boxes .searchBox{display:-webkit-box;display:-ms-flexbox;display:flex}
-.srkHeaderTop .boxes .searchBox input{padding:2px 8px;line-height:24px;height:24px;background-color:#fff;border:0;border-radius:2px 0 0 2px;font-size:14px}
+.srkHeaderTop .boxes .searchBox input{padding:2px 8px;line-height:24px;height:24px;background-color:#fff;border:0;border-radius:2px 0 0 2px;font-size:14px;min-width: 200px;}
 .srkHeaderTop .boxes .searchBox .btn{color:#fff;cursor:pointer;height:24px;width:30px;border:none;background-color:#ff8c00;border-radius:0 2px 2px 0}
 @media (max-width:767px){.srkHeaderTop,.srkHeaderTop .boxes .infoBox{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%}
 .srkHeaderTop .boxes .infoBox .item{margin-bottom:10px}
