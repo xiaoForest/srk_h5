@@ -462,7 +462,7 @@
     width: 100%;
     max-width: 500px;
 }
-.srkproductShopping li .items .img a:hover img {
+.srkproductShopping li:hover .items .img a img {
     transform: scale(1.1);
 }
 .srkproductShopping li .items .info {
