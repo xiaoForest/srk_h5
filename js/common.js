@@ -88,7 +88,7 @@ jQuery(document).ready(function ($) {
     })
 
 
-    if ($('.srkGoodsImgsSwiper').length) {
+    if ($('.srkGoodsImgsSwiper').length || $('.srkProductBannersSwiper').length) {
         var srkGoodsImgsSwiper = new Swiper(".srkGoodsImgsSwiper", {
             spaceBetween: 10,
             slidesPerView: 6,
@@ -103,8 +103,6 @@ jQuery(document).ready(function ($) {
                 swiper: srkProductBannersSwiper,
             },
         });
-    }
-    if ($('.srkProductBannersSwiper').length) {
         var srkProductBannersSwiper = new Swiper('.srkProductBannersSwiper', {
             effect: 'fade', // cards
             loop: true,
@@ -116,29 +114,32 @@ jQuery(document).ready(function ($) {
                 swiper: srkGoodsImgsSwiper,
             },
         })
+        srkProductBannersSwiper.el.onmouseover = function () {
+            changeStop()
+        }
+        srkProductBannersSwiper.el.onmouseleave = function () {
+            changeStart()
+        }
+        srkGoodsImgsSwiper.el.onmouseover = function () {
+            changeStop()
+        }
+        srkGoodsImgsSwiper.el.onmouseleave = function () {
+            changeStart()
+        }
+
+        function changeStop() {
+            srkProductBannersSwiper.autoplay.stop();
+            srkGoodsImgsSwiper.autoplay.stop();
+        }
+
+        function changeStart() {
+            srkProductBannersSwiper.autoplay.start();
+            srkGoodsImgsSwiper.autoplay.start();
+        }
+
     }
 
-    function changeStop() {
-        srkProductBannersSwiper.autoplay.stop();
-        srkGoodsImgsSwiper.autoplay.stop();
-    }
 
-    function changeStart() {
-        srkProductBannersSwiper.autoplay.start();
-        srkGoodsImgsSwiper.autoplay.start();
-    }
-    srkProductBannersSwiper.el.onmouseover = function () {
-        changeStop()
-    }
-    srkProductBannersSwiper.el.onmouseleave = function () {
-        changeStart()
-    }
-    srkGoodsImgsSwiper.el.onmouseover = function () {
-        changeStop()
-    }
-    srkGoodsImgsSwiper.el.onmouseleave = function () {
-        changeStart()
-    }
     // $(window).resize(function () {
 
     // });
