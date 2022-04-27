@@ -667,8 +667,8 @@
 .srkProductInformation p {
 }
 .srkProductInformation img {
-}
- {
+    display: inline-block;
+    max-width: 100%;
 }
 
 .srkInteriorTable {
@@ -691,4 +691,194 @@
 .srkInteriorTable table th,
 .srkInteriorTable table td {
     padding: 4px 10px;
+}
+
+.srkProductCommodityCase {
+    display: flex;
+}
+.srkProductBannerBoxes {
+    width: 100%;
+    max-width: 450px;
+    min-width: 320px;
+
+    position: relative;
+    height: auto;
+
+    margin-right: 35px;
+    margin-bottom: 10px;
+    z-index: 0;
+}
+.srkProductBannersSwiper {
+}
+.srkProductBanners {
+    height: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+.srkProductBanners li {
+    width: 100%;
+    height: 100%;
+}
+.srkProductBanners li .img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 450px;
+}
+.srkProductBanners li .img img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 450px;
+}
+
+.srkSmallImgs {
+    width: 100%;
+    display: block;
+    height: auto;
+    overflow: hidden;
+}
+.srkGoodsImgsSwiper {
+}
+.srkGoodsImgs {
+    font-size: 0px;
+    margin-top: 4px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.srkGoodsImgs li {
+    width: 70px;
+    height: 100%;
+    background-position: 0px 0px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin-right: 8px;
+    border: 1px solid #e6e6e6;
+    display: table;
+    margin-top: 8px;
+}
+.srkGoodsImgs li.swiper-slide-thumb-active {
+    color: #fff;
+    margin-right: 8px;
+    height: 100%;
+    width: 70px;
+    border: 1px solid #f00;
+}
+.srkGoodsImgs li .img {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.srkGoodsImgs li .img img {
+    max-height: 70px;
+    max-width: 70px;
+    vertical-align: middle;
+    display: table-cell;
+    z-index: -1;
+    position: relative;
+}
+
+.srkProductAttributesBoxes {
+    width: 49%;
+}
+.srkProductAttributes {
+}
+.srkProductAttributes .name {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.srkProductAttributes .attributes {
+    margin-bottom: 20px;
+}
+.srkProductAttributes .attributes ul {
+}
+.srkProductAttributes .attributes ul li {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.srkProductAttributes .attributes ul li label {
+    color: #ff8c00;
+    font-size: 15px;
+    margin: 0 0 5px 0;
+}
+.srkProductAttributes .attributes ul li span {
+}
+.srkProductAttributes .overview {
+    margin-bottom: 20px;
+}
+.srkProductAttributes .overview p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.srkProductAttributes .socialCircle {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.srkProductAttributes .socialCircle .email {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.srkProductAttributes .socialCircle .email a {
+    line-height: 20px;
+    color: #fff;
+    background-color: #ff8c00;
+    padding: 8px 15px;
+    display: flex;
+}
+.srkProductAttributes .socialCircle .email a i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+.srkProductAttributes .socialCircle .email a:hover {
+    color: #fff;
+    background-color: #666;
+}
+.srkProductAttributes .socialCircle .at-share-btn-elements {
+    position: relative;
+    left: -2px;
+}
+@media (max-width: 1379px) {
+    .srkProductBannerBoxes {
+        width: 100%;
+        max-width: 400px;
+        min-width: 320px;
+    }
+}
+@media (max-width: 1299px) {
+    .srkProductBannerBoxes {
+        width: 100%;
+        max-width: 320px;
+        min-width: 200px;
+    }
+    .srkGoodsImgs li {
+    }
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+}
+@media (max-width: 767px) {
+    .srkProductCommodityCase {
+        flex-direction: column;
+    }
+    .srkProductBannerBoxes {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .srkGoodsImgs li {
+        height: auto;
+    }
+    .srkProductAttributesBoxes {
+        width: 100%;
+    }
 }
