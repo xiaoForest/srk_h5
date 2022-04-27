@@ -93,8 +93,7 @@ jQuery(document).ready(function ($) {
             spaceBetween: 10,
             slidesPerView: 6,
             slideToClickedSlide: true,
-            watchSlidesVisibility: true,
-            /*避免出现bug*/
+            watchSlidesVisibility: true, // 避免出现BUG
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false
