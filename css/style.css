@@ -882,3 +882,66 @@
         width: 100%;
     }
 }
+
+.srkContactTableBox {
+}
+.srkContactTable {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.srkContactInfo {
+    padding: 20px;
+    background: #fff;
+}
+.srkContactInfo table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.srkContactInfo tr {
+    background: #fff;
+    word-break: break-all;
+}
+.srkContactInfo tr:hover {
+    background-color: #faf9f9;
+}
+.srkContactInfo tr th,
+.srkContactInfo tr td {
+    font-size: 14px;
+}
+.srkContactInfo tr th:first-child,
+.srkContactInfo tr td:first-child {
+    width: 28%;
+}
+.srkContactInfo td a {
+    color: #fff;
+    padding: 13px;
+}
+.srkContactInfo td {
+    padding: 15px 10px;
+    border: 1px solid #ebebeb;
+    vertical-align: middle;
+}
+.srkContactInfo td i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.srkContactInfo td.name,
+.srkContactInfo td.description {
+    vertical-align: top;
+}
+.srkContactInfo td:first-child {
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    vertical-align: middle;
+}
+@media (max-width: 767px) {
+    .srkContactInfo {
+        border: 8px solid #ebebeb;
+    }
+    .srkContactInfo tr th:first-child,
+    .srkContactInfo tr td:first-child {
+        width: 32%;
+    }
+}
