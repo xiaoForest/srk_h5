@@ -1562,7 +1562,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;-webkit-box-shado
 }
 .srkASubmenus li{display:block}
 .srkASubmenus li a{display:block;border:0!important;padding:9px 23px;background:0 0;color:#666;border-radius:0!important;white-space:nowrap;font-size:14px;text-align:left}
-.srkASubmenus li a:hover,.srkMainMenu li.current a{color:#ff8c00}
+.srkASubmenus li a:hover, .srkMainMenu li.current .one{color:#ff8c00}
 @media (max-width:1199px){.srkLogo{display:block;width:170px;margin-right:5%}
 }
 @media (max-width:993px){.srkLogo{width:140px;margin-right:2%}
@@ -1570,7 +1570,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;-webkit-box-shado
 .srkMainMenu li{padding:0 5px}
 .srkMainMenu li>a .iconfont{margin-left:2px}
 }
-@media (max-width:767px){.srkMainMenu li a.one,.srkMainMenu li.current a,.srkMainMenu li>a.there-are-submenus{color:#fff;font-weight:400;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+@media (max-width:767px){.srkMainMenu li a.one, .srkMainMenu li.current .one, .srkMainMenu li>a.there-are-submenus{color:#fff;font-weight:400;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .srkMainMenu li a{line-height:23px;padding:10px}
 .headerNavWrapper.pft .srkLogo{width:100px;margin-right:0}
 .headerNavWrapper{height:auto;padding:10px 0}
