@@ -66,16 +66,17 @@ jQuery(document).ready(function ($) {
             }, 300)
         })
     } else {
-        $('.srkMainMenu li').on('click', 'a', function (evt) {
-            evt.preventDefault();
+        $('.srkMainMenu li').on('click', ' a', function (evt) {
+            let hasClassIcon = $('.srkMainMenu li a span').attr('class')
+            if (evt.target.className == hasClassIcon) {
+                evt.preventDefault();
+            }
             let $saCon = $(this).next('.srkASubmenus')
             if (!$saCon.hasClass('active')) {
-                $saCon.hide().slideDown(250, function () {
-                });
+                $saCon.hide().slideDown(250, function () {});
                 $saCon.addClass('active')
             } else {
-                $saCon.show().slideUp(250, function () {
-                });
+                $saCon.show().slideUp(250, function () {});
                 $saCon.removeClass('active')
             }
 
