@@ -648,3 +648,47 @@
     font-size: 14px;
     display: inline-block;
 }
+
+.srkProductInformationCase {
+    margin: 30px 0;
+    overflow: hidden;
+    clear: both;
+}
+.srkProductInformationCon {
+    overflow: hidden;
+    padding: 0;
+    line-height: 28px;
+    font-size: 14px;
+}
+.srkProductInformation {
+    padding: 20px;
+    background-color: #fff;
+}
+.srkProductInformation p {
+}
+.srkProductInformation img {
+}
+ {
+}
+
+.srkInteriorTable {
+}
+
+/*表格手机端滑动*/
+.srkInteriorTable {
+    width: 100%;
+    overflow: auto;
+}
+.srkInteriorTable table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.srkInteriorTable table,
+.srkInteriorTable table th,
+.srkInteriorTable table td {
+    border: 1px solid #ececec;
+}
+.srkInteriorTable table th,
+.srkInteriorTable table td {
+    padding: 4px 10px;
+}
