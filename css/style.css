@@ -27,6 +27,7 @@
 .srkBreadCrumb {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .srkBreadCrumb li {
     font-size: 14px;
@@ -516,7 +517,9 @@
 .srkproductShopping li .items .info .btns a i {
     position: relative;
     top: 2px;
-font-size: 20px;margin-right: 4px;}
+    font-size: 20px;
+    margin-right: 4px;
+}
 .srkproductShopping li .items .info .btns a.more {
     color: #242424;
     background-color: #f0f0f0;
@@ -543,4 +546,105 @@ font-size: 20px;margin-right: 4px;}
     .srkproductShopping li .items .info > .box {
         margin-left: 0;
     }
+}
+
+.srkRelatedProductsCase {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+.srkRelatedProductsTitle {
+}
+.srkRelatedProductsTitle .title {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.srkRelatedProductsTitle .title span {
+    font-size: 18px;
+    line-height: 30px;
+    background-color: #fff;
+    display: inline-block;
+    padding-right: 30px;
+    position: relative;
+    z-index: 1;
+}
+.srkRelatedProductsTitle .title:after {
+    background-color: #eee;
+    bottom: 10px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.srkRelatedProductsList {
+    font-size: 0;
+    margin: 0 -15px;
+}
+.srkRelatedProductsList li {
+    font-size: 14px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+.srkRelatedProductsList li .item {
+    padding: 15px;
+}
+.srkRelatedProductsList li .item .img {
+    overflow: hidden;
+}
+.srkRelatedProductsList li .item .img a {
+}
+.srkRelatedProductsList li .item .img a img {
+    width: 100%;
+    max-width: 500px;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+}
+.srkRelatedProductsList li:hover .item .img a img {
+    transform: scale(1.1);
+}
+.srkRelatedProductsList li .item .name {
+}
+.srkRelatedProductsList li .item .name a {
+}
+.srkRelatedProductsList li .item .name a .text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+@media (max-width: 767px) {
+    .srkRelatedProductsList li {
+        width: 50%;
+    }
+}
+
+.srkProductTagCase {
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    background-color: #fff;
+}
+.srkProductTagCase .tit {
+    display: inline-block;
+}
+.srkProductTagCase .tit span {
+    font-size: 16px;
+    padding: 5px 0;
+    float: left;
+    white-space: nowrap;
+}
+.srkProductTagCase .tags {
+    vertical-align: top;
+}
+.srkProductTagCase .tags a {
+    margin: 5px 12px;
+    line-height: 20px;
+    font-size: 14px;
+    display: inline-block;
 }
