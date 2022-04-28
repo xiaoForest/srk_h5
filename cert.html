@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <!--[if lt IE 9]>
     <script src="/statics/home/js/ie/html5shiv.js"></script>
     <script src="/statics/home/js/ie/respond.min.js"></script>
@@ -170,7 +170,7 @@
 
         <div class="srkInnerPageWrap container">
             <div class="srkInnerPageContent">
-                <div class="srkInnerPageLifht">
+                <div class="srkInnerPageLight">
                     <div class="srkSidebarBox">
 
                         <div class="srkChangeMore">
@@ -279,7 +279,50 @@
                     </div>
                 </div>
                 <div class="srkInnerPageRight">
-                    
+                    <div class="srkCertificateListingBox">
+                        <ul>
+                            <li>
+                                <div class="items">
+                                    <div class="img">
+                                        <a href="images/t1.jpg" data-fancybox="gallery">
+                                            <img src="images/t1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="text">Halal Certificate</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="items">
+                                    <div class="img">
+                                        <a href="images/t2.jpg" data-fancybox="gallery">
+                                            <img src="images/t2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="text">Halal Certificate</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="items">
+                                    <div class="img">
+                                        <a href="images/t1.jpg" data-fancybox="gallery">
+                                            <img src="images/t1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="text">Halal Certificate</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="items">
+                                    <div class="img">
+                                        <a href="images/t1.jpg" data-fancybox="gallery">
+                                            <img src="images/t1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="text">Halal Certificate</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -439,6 +482,39 @@
         })();
     </script>
     <!--End of Tawk.to Script-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            dragToClose: false,
+
+            Toolbar: false,
+            closeButton: "top",
+
+            Image: {
+                zoom: false,
+            },
+
+            on: {
+                initCarousel: (fancybox) => {
+                    const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+
+                    fancybox.$container.style.setProperty(
+                        "--bg-image",
+                        `url("${slide.$thumb.src}")`
+                    );
+                },
+                "Carousel.change": (fancybox, carousel, to, from) => {
+                    const slide = carousel.slides[to];
+
+                    fancybox.$container.style.setProperty(
+                        "--bg-image",
+                        `url("${slide.$thumb.src}")`
+                    );
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>

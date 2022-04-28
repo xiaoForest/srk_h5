@@ -57,19 +57,19 @@
 }
 .srkInnerPageContent {
     width: 100%;
-    margin: 20px 0;
+    margin: 0;
     overflow: hidden;
     display: flex;
 }
 .srkInnerPageRight,
-.srkInnerPageLifht {
+.srkInnerPageLight {
     margin-bottom: 40px;
 }
 .srkInnerPageRight {
     width: 74%;
     flex: 1;
 }
-.srkInnerPageLifht {
+.srkInnerPageLight {
     width: 26%;
 }
 @media (max-width: 767px) {
@@ -77,13 +77,13 @@
         flex-direction: column-reverse;
     }
     .srkInnerPageRight,
-    .srkInnerPageLifht {
+    .srkInnerPageLight {
         margin-bottom: 20px;
     }
     .srkInnerPageRight {
         width: 100%;
     }
-    .srkInnerPageLifht {
+    .srkInnerPageLight {
         width: 100%;
     }
 }
@@ -1359,4 +1359,90 @@
     margin-left: 5px;
 }
 .srkOtherUpperNextMod .unwrap .otherNext a span {
+}
+
+.srkCertificateListingBox {
+}
+.srkCertificateListingBox ul {
+    font-size: 0;
+    overflow: hidden;
+}
+.srkCertificateListingBox ul li {
+    width: 33.33%;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+.srkCertificateListingBox ul li .items {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 10px 20px;
+    position: relative;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+}
+.srkCertificateListingBox ul li .items:hover {
+    background-color: #ff8c00;
+}
+.srkCertificateListingBox ul li .items .img {
+    overflow: hidden;
+    height: 280px;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+.srkCertificateListingBox ul li .items .img a {
+    display: table;
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+.srkCertificateListingBox ul li .items .img a img {
+    max-height: 280px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.srkCertificateListingBox ul li .items .text {
+    font-size: 16px;
+    background-color: #666;
+    color: #fff;
+    display: block;
+    padding: 8px 25px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+    .srkCertificateListingBox ul li {
+        width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .srkCertificateListingBox ul li {
+        width: 100%;
+    }
+    .srkCertificateListingBox ul li .items {
+        padding: 0;
+        margin: 0 0 15px;
+    }
+    .srkCertificateListingBox ul li .items .img {
+        height: 180px;
+    }
+    .srkCertificateListingBox ul li .items .img a img {
+        max-height: 180px;
+    }
 }
