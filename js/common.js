@@ -38,10 +38,10 @@ jQuery(document).ready(function ($) {
             let scrollTop = $(window).scrollTop();
             if (scrollTop < headerTop) {
                 $('.headerNavWrapper').removeClass('pft')
-                $('.mainWrapper').css('top', 0)
+                $('.mainWrapper').css('marginTop', 0)
             } else {
                 $('.headerNavWrapper').addClass('pft')
-                $('.mainWrapper').css('top', headerNav)
+                $('.mainWrapper').css('marginTop', headerNav)
             }
         })
 
