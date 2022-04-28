@@ -136,6 +136,13 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+}
+.srkSidebarNewsCon li:hover {
+    transform: translateX(10px);
 }
 .srkSidebarNewsCon li i {
     font-size: 18px;
@@ -423,6 +430,10 @@
     -webkit-transition: ease all 0.4s;
     -moz-transition: ease all 0.4s;
     -o-transition: ease all 0.4s;
+}
+.srkPaginationBar ul li:hover a {
+    background: #ff8c00;
+    color: #fff;
 }
 .srkPaginationBar ul li a i {
     display: block;
@@ -1057,5 +1068,187 @@
         margin: 0 0 20px 0;
         float: none;
         max-width: 500px;
+    }
+}
+
+.srkNewsListTopCase {
+    overflow: hidden;
+}
+.srkNewsListTop {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.srkNewsListTop .item {
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+    padding: 20px;
+    background-color: #fff;
+}
+.srkNewsListTop .item .img {
+    overflow: hidden;
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.srkNewsListTop .item .img a {
+    overflow: hidden;
+    display: block;
+}
+.srkNewsListTop .item .img a img:hover {
+    transform: scale(1.1);
+}
+.srkNewsListTop .item .img a img {
+    height: auto;
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+}
+.srkNewsListTop .item .info {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+}
+.srkNewsListTop .item .info span {
+    font-size: 14px;
+    color: #ff8c00;
+    margin-left: 25px;
+}
+.srkNewsListTop .item .info a {
+    overflow: hidden;
+    display: block;
+}
+.srkNewsListTop .item .info a h2 {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 10px 0 10px 25px;
+}
+.srkNewsListTop .item .info p {
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 80px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-bottom: 8px;
+}
+@media (max-width: 767px) {
+    .srkNewsListTop .item .img,
+    .srkNewsListTop .item .info {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .srkNewsListTop .item .info span,
+    .srkNewsListTop .item .info a h2,
+    .srkNewsListTop .item .info p {
+        margin-left: 0;
+    }
+}
+
+.srkNewsListingCase {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.srkNewsListingTitle {
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 12px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.srkNewsListingTitle .tit {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+.srkNewsListingTitle .tit a {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+.srkNewsListingTitle span {
+}
+.srkNewsListingTitle span a {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.srkNewsListingList {
+    overflow: hidden;
+    font-size: 0;
+    margin: -15px;
+}
+.srkNewsListingList li {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.srkNewsListingList li .items {
+    overflow: hidden;
+    position: relative;
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+}
+.srkNewsListingList li .items .img {
+    margin-bottom: 10px;
+    min-height: 40px;
+    overflow: hidden;
+}
+.srkNewsListingList li .items .img a {
+}
+.srkNewsListingList li:hover .items .img a img {
+    transform: scale(1.2);
+}
+.srkNewsListingList li .items .img a img {
+    width: 100%;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+}
+.srkNewsListingList li .items .text {
+}
+.srkNewsListingList li .items .text h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.srkNewsListingList li .items p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+.srkNewsListingList li .items span {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #ff8c00;
+    padding: 5px;
+}
+@media (max-width: 767px) {
+    .srkNewsListingList {
+        margin: -5px;
+    }
+    .srkNewsListingList li {
+        width: 100%;
+    }
+    .srkNewsListingList li .items {
+        margin: 5px;
+        padding: 15px px;
     }
 }
