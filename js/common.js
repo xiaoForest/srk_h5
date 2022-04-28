@@ -16,7 +16,6 @@ jQuery(document).ready(function ($) {
     }
 
     function changeHeader() {
-
         let $mainMenuState = $('#srkMainMenuState');
         if ($mainMenuState.length) {
             // animate mobile menu
@@ -33,14 +32,16 @@ jQuery(document).ready(function ($) {
                 }
             });
         }
-
+        let headerNav = $('.headerNavWrapper').outerHeight()
         $(window).scroll(function () {
             let headerTop = $('.headerTopWrapper').outerHeight(true)
             let scrollTop = $(window).scrollTop();
             if (scrollTop < headerTop) {
                 $('.headerNavWrapper').removeClass('pft')
+                $('.mainWrapper').css('top', 0)
             } else {
                 $('.headerNavWrapper').addClass('pft')
+                $('.mainWrapper').css('top', headerNav)
             }
         })
 
