@@ -39,13 +39,13 @@ jQuery(document).ready(function ($) {
             if (scrollTop < headerTop) {
                 $('.headerNavWrapper').removeClass('pft')
                 $('.mainWrapper').css('marginTop', 0)
-                window.removeEventListener('scroll',(e) => {
-              
+                window.removeEventListener('scroll', (e) => {
+
                 })
             } else {
                 $('.headerNavWrapper').addClass('pft')
                 $('.mainWrapper').css('marginTop', headerNav)
-                window.addEventListener('scroll',() => {})
+                window.addEventListener('scroll', () => {})
             }
         })
 
@@ -143,7 +143,22 @@ jQuery(document).ready(function ($) {
 
     }
 
+    if ($('.srkAboutBanner').length) {
+        var srkAboutBanner = new Swiper('.srkAboutBanner', {
+            effect: 'fade', // cards
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiperAboutPagination',
+                type: 'bullets',
+                clickable: true,
+            },
 
+        })
+    }
     // $(window).resize(function () {
 
     // });

@@ -1252,3 +1252,43 @@
         padding: 15px px;
     }
 }
+
+.srkAboutDetailsBox {
+    overflow: hidden;
+    padding: 20px;
+    line-height: 28px;
+    font-size: 14px;
+    background-color: #fff;
+}
+.srkAboutDetailsBox .subtitle {
+    padding: 12px 20px;
+    background-color: #f7f7f0;
+    margin-bottom: 20px;
+}
+.srkAboutDetailsBox .subtitle h1 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.srkAboutBanner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+.srkAboutBanner ul {
+}
+.srkAboutBanner ul li {
+}
+.srkAboutBanner ul li .img {
+}
+.srkAboutBanner ul li .img img {
+}
+
+.srkAboutDetailsMain {
+    overflow: hidden;
+}
+.srkAboutDetailsMain p {
+}
+.srkAboutDetailsMain img {
+    max-width: 100%;
+}
