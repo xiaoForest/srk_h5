@@ -1529,3 +1529,92 @@
         width: 100%;
     }
 }
+
+.srkHomeBannerWrap {
+    overflow: hidden;
+}
+.srkHomeBannerWrap ul {
+}
+.srkHomeBannerWrap ul li {
+}
+.srkHomeBannerWrap ul li a {
+}
+.srkHomeBannerWrap ul li a img {
+}
+.srkHomeBannerWrap .swiper-pagination {
+display: flex;justify-content: center;align-items: center;}
+.srkHomeBannerWrap .swiper-pagination > span {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background-color: #ececec;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+.srkHomeBannerWrap .swiper-pagination > span.swiper-pagination-bullet-active {
+    background-color: #ff8c00;
+    width: 18px;
+    height: 18px;
+}
+.srkHomeBannerWrap .swiper-button-prev,
+.srkHomeBannerWrap .swiper-button-next {
+    width: 45px;
+    height: 45px;
+    margin: -13px 0 0;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: 0 0;
+    z-index: 1;
+    font-size: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.srkHomeBannerWrap .swiper-button-prev:hover,
+.srkHomeBannerWrap .swiper-button-next:hover {
+    background-color: #ff8c00;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.srkHomeBannerWrap .swiper-button-prev {
+}
+.srkHomeBannerWrap .swiper-button-next {
+}
+
+.srkHomeBannerWrap .swiper-button-prev:after,
+.srkHomeBannerWrap .swiper-button-next:after {
+    font-size: 20px;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .srkHomeBannerWrap .swiper-pagination > span {
+        width: 10px;
+        height: 10px;
+    }
+    .srkHomeBannerWrap .swiper-pagination > span.swiper-pagination-bullet-active {
+        width: 14px;
+        height: 14px;
+    }
+    .srkHomeBannerWrap .swiper-button-prev,
+    .srkHomeBannerWrap .swiper-button-next {
+        width: 25px;
+        height: 25px;
+        margin: -7px 0 0;
+    }
+    .srkHomeBannerWrap .swiper-button-prev:after,
+    .srkHomeBannerWrap .swiper-button-next:after {
+        font-size: 14px;
+        color: #fff;
+    }
+}

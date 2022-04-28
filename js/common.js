@@ -92,6 +92,25 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass('show')
     })
 
+    if ($('.srkHomeBannerWrap').length) {
+        var srkHomeBannerWrap = new Swiper('.srkHomeBannerWrap', {
+            effect: 'fade', // cards
+            loop: true,
+            autoplay: {
+                delay:4000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev ',
+            },
+        })
+    }
 
     if ($('.srkGoodsImgsSwiper').length || $('.srkProductBannersSwiper').length) {
         var srkGoodsImgsSwiper = new Swiper(".srkGoodsImgsSwiper", {
