@@ -1292,3 +1292,71 @@
 .srkAboutDetailsMain img {
     max-width: 100%;
 }
+
+.srkNewsDetailsBox {
+    overflow: hidden;
+    padding: 0;
+    line-height: 28px;
+    font-size: 14px;
+    padding: 20px;
+    background-color: #fff;
+}
+.srkNewsDetailsBox .subtitle {
+    background: #f7f7f0;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+.srkNewsDetailsBox .subtitle h1 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.srknewsDetailsMain {
+    overflow: hidden;
+}
+.srknewsDetailsMain p {
+}
+.srknewsDetailsMain img {
+    max-width: 100%;
+}
+
+.srkOtherUpperNextMod {
+    border-top: 1px solid #ebebeb;
+    overflow: hidden;
+    line-height: 28px;
+    font-size: 14px;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.srkOtherUpperNextMod .unwrap {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.srkOtherUpperNextMod .unwrap .iconfont {
+    font-size: 14px;
+    display: inline-block;
+}
+.srkOtherUpperNextMod .unwrap .otherUpper {
+}
+.srkOtherUpperNextMod .unwrap .otherUpper a {
+}
+.srkOtherUpperNextMod .unwrap .otherUpper a i {
+    transform: rotate(-90deg);
+    margin-right: 5px;
+}
+.srkOtherUpperNextMod .unwrap .otherUpper a span {
+}
+
+.srkOtherUpperNextMod .unwrap .otherNext {
+}
+.srkOtherUpperNextMod .unwrap .otherNext a {
+}
+.srkOtherUpperNextMod .unwrap .otherNext a i {
+    transform: rotate(90deg);
+    margin-left: 5px;
+}
+.srkOtherUpperNextMod .unwrap .otherNext a span {
+}
