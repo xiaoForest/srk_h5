@@ -945,3 +945,28 @@
         width: 32%;
     }
 }
+
+.srkFactoryDetailsBox {
+    overflow: hidden;
+    padding: 20px;
+    line-height: 28px;
+    font-size: 14px;
+    background-color: #fff;
+}
+.srkFactoryDetailsTitle {
+    padding: 12px 20px;
+    background-color: #f7f7f0;
+    margin-bottom: 20px;
+}
+.srkFactoryDetailsTitle h1 {
+    font-size: 18px;
+    line-height: 24px;
+}
+.srkFactoryDetailsCon {
+    overflow: hidden;
+}
+.srkFactoryDetailsCon p {
+}
+.srkFactoryDetailsCon img {
+    max-width: 100%;
+}
