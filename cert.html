@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/photoswipe.css">
+
     <!--[if lt IE 9]>
     <script src="/statics/home/js/ie/html5shiv.js"></script>
     <script src="/statics/home/js/ie/respond.min.js"></script>
@@ -279,13 +280,14 @@
                     </div>
                 </div>
                 <div class="srkInnerPageRight">
-                    <div class="srkCertificateListingBox">
+                    <div class="srkCertificateListingBox" id="my-gallery">
                         <ul>
                             <li>
                                 <div class="items">
                                     <div class="img">
-                                        <a href="images/t1.jpg" data-fancybox="gallery">
-                                            <img src="images/t1.jpg" alt="">
+                                        <a href="images/t1.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                                            target="_blank">
+                                            <img src="images/t1.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="text">Halal Certificate</div>
@@ -294,8 +296,9 @@
                             <li>
                                 <div class="items">
                                     <div class="img">
-                                        <a href="images/t2.jpg" data-fancybox="gallery">
-                                            <img src="images/t2.jpg" alt="">
+                                        <a href="images/t2.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                                            target="_blank">
+                                            <img src="images/t2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="text">Halal Certificate</div>
@@ -304,8 +307,9 @@
                             <li>
                                 <div class="items">
                                     <div class="img">
-                                        <a href="images/t1.jpg" data-fancybox="gallery">
-                                            <img src="images/t1.jpg" alt="">
+                                        <a href="images/t1.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                                            target="_blank">
+                                            <img src="images/t1.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="text">Halal Certificate</div>
@@ -314,8 +318,9 @@
                             <li>
                                 <div class="items">
                                     <div class="img">
-                                        <a href="images/t1.jpg" data-fancybox="gallery">
-                                            <img src="images/t1.jpg" alt="">
+                                        <a href="images/t2.jpg" data-pswp-width="1669" data-pswp-height="2500"
+                                            target="_blank">
+                                            <img src="images/t2.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="text">Halal Certificate</div>
@@ -483,37 +488,14 @@
     </script>
     <!--End of Tawk.to Script-->
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script>
-        Fancybox.bind('[data-fancybox="gallery"]', {
-            dragToClose: false,
-
-            Toolbar: false,
-            closeButton: "top",
-
-            Image: {
-                zoom: false,
-            },
-
-            on: {
-                initCarousel: (fancybox) => {
-                    const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
-
-                    fancybox.$container.style.setProperty(
-                        "--bg-image",
-                        `url("${slide.$thumb.src}")`
-                    );
-                },
-                "Carousel.change": (fancybox, carousel, to, from) => {
-                    const slide = carousel.slides[to];
-
-                    fancybox.$container.style.setProperty(
-                        "--bg-image",
-                        `url("${slide.$thumb.src}")`
-                    );
-                },
-            },
+    <script type="module">
+        import Lightbox from '/js/photoswipe/photoswipe-lightbox.esm.js';
+        const lightbox = new Lightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('/js/photoswipe/photoswipe.esm.js')
         });
+        lightbox.init();
     </script>
 </body>
 
