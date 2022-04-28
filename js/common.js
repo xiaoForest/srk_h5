@@ -39,9 +39,13 @@ jQuery(document).ready(function ($) {
             if (scrollTop < headerTop) {
                 $('.headerNavWrapper').removeClass('pft')
                 $('.mainWrapper').css('marginTop', 0)
+                window.removeEventListener('scroll',(e) => {
+              
+                })
             } else {
                 $('.headerNavWrapper').addClass('pft')
                 $('.mainWrapper').css('marginTop', headerNav)
+                window.addEventListener('scroll',() => {})
             }
         })
 
