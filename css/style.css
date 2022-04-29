@@ -1765,7 +1765,116 @@
     text-transform: uppercase;
 }
 @media (max-width: 767px) {
-    .srkHomeHeadline span  {
+    .srkHomeHeadline span {
         font-size: 24px;
+    }
+}
+.srkHomeNewsWrap {
+    background: #fff;
+    overflow: hidden;
+}
+.srkHomeCertificationsWrap {
+    overflow: hidden;
+    padding: 10px 0 30px;
+}
+.srkHomeCertifications {
+    font-size: 0;
+    margin: -15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.srkHomeCertifications li {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    position: relative;
+}
+.srkHomeCertifications.homeNews li {
+    width: 33.33%;
+}
+.srkHomeCertifications li .item {
+    position: relative;
+    overflow: hidden;
+    background-color: #626262;
+    margin: 15px;
+    color: #fff;
+}
+.srkHomeCertifications li:hover .item {
+    background-color: #fff;
+}
+.srkHomeCertifications li .item .img {
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+    border-bottom: 0;
+}
+.srkHomeCertifications li .item .img a {
+    height: 30px;
+    /* display: table-cell; */
+    vertical-align: middle;
+    overflow: hidden;
+}
+.srkHomeCertifications li .item .img a img {
+    width: 100%;
+    max-height: 360px;
+    max-width: 100%;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+}
+.srkHomeCertifications li .item .img:hover a img {
+    transform: scale(1.1);
+}
+.srkHomeCertifications li .item .info {
+    padding: 6px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.srkHomeCertifications li .item .info .text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.srkHomeCertifications li .item .info .text a {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 1.4;
+    color: #fff;
+}
+.srkHomeCertifications li:hover .item .info .text a {
+    color: #ff8c00;
+}
+.srkHomeCertifications li .item .info p {
+    color: #7a7a7a;
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 40px;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+@media (max-width: 993px) {
+    .srkHomeCertifications.homeNews li,
+    .srkHomeCertifications li {
+        width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .srkHomeCertifications.homeNews li,
+    .srkHomeCertifications li {
+        width: 100%;
+    }
+    .srkHomeCertifications li .item .info {
+        height: auto;
+    }
+    .srkHomeCertifications li .item .info .text a {
+        font-size: 16px;
     }
 }

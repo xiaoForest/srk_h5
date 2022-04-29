@@ -232,6 +232,33 @@ jQuery(document).ready(function ($) {
             },
         })
     }
+ 
+    if ($('#srkHotProductsThree').length) {
+        var srkAboutBanner = new Swiper('#srkHotProductsThree', {
+            effect: 'cards', // cards
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev ',
+            },
+            breakpoints: {
+                "767": {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                "993": {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                }
+            },
+        })
+    }
     // $(window).resize(function () {
 
     // });
