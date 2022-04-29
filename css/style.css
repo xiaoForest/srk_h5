@@ -1878,3 +1878,146 @@
         font-size: 16px;
     }
 }
+
+.srkHomeImageCollectionWrap {
+    padding: 80px 0;
+    background: #fff;
+    overflow: hidden;
+}
+.srkHomeImageCollectionWrap img {
+    width: 100%;
+}
+
+.srkHomeAboutWrap {
+    background: #fff;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.srkHomeAbout {
+    width: 90%;
+    margin: 30px auto;
+    max-width: 1400px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+.srkHomeAbout .videoBoxes {
+    width: 50%;
+    vertical-align: middle;
+}
+.srkHomeAbout .videoBoxes .videoCon {
+    position: relative;
+}
+.srkHomeAbout .videoBoxes .videoCon iframe {
+    width: 100% !important;
+}
+.srkHomeAbout .videoBoxes .videoCon:after {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    bottom: -30px;
+    left: -30px;
+    content: " ";
+    border: 4px solid #ebebeb;
+    z-index: -1;
+}
+.srkHomeAbout .infoBoxes {
+    flex: 1;
+    width: 50%;
+    vertical-align: middle;
+}
+.srkHomeAbout .infoBoxes .info {
+    padding-left: 40px;
+}
+.srkHomeAbout .infoBoxes .title {
+    margin-bottom: 30px;
+}
+.srkHomeAbout .infoBoxes .title span {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 50px;
+    position: relative;
+    text-transform: uppercase;
+    display: block;
+}
+.srkHomeAbout .infoBoxes .text {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+.srkHomeAbout .infoBoxes .text a {
+    color: #ff8c00;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+}
+.srkHomeAbout .infoBoxes .text a:hover {
+    color: #333e48;
+}
+.srkHomeAbout .infoBoxes p {
+    font-size: 14px;
+    line-height: 28px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.srkHomeAbout .infoBoxes span {
+    display: block;
+}
+.srkHomeAbout .infoBoxes span a {
+    background-color: #ff8c00;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    padding: 5px 25px;
+    display: inline-block;
+    transition: ease all 0.4s;
+    -webkit-transition: ease all 0.4s;
+    -moz-transition: ease all 0.4s;
+    -o-transition: ease all 0.4s;
+}
+.srkHomeAbout .infoBoxes span:hover a {
+    background-color: #444;
+    color: #fff;
+}
+
+@media (max-width: 993px) {
+}
+@media (max-width: 767px) {
+    .srkHomeAboutWrap {
+        padding: 0 15px;
+    }
+    .srkHomeAbout {
+        width: auto;
+    
+        flex-direction: column;
+    }
+    .srkHomeAbout .videoBoxes,
+    .srkHomeAbout .infoBoxes {
+        width: 100%;
+    }
+    .srkHomeAbout .infoBoxes .info {
+        padding-left: 0;
+    }
+    .srkHomeAbout .videoBoxes .videoCon:after {
+        content: normal;
+    }
+    .srkHomeAbout .infoBoxes .title {
+        margin-bottom: 0;
+    }
+    .srkHomeAbout .infoBoxes .title span {
+        font-size: 24px;
+    }
+    .srkHomeAbout .infoBoxes .text {
+        font-size: 20px;
+        line-height: 28px;
+        margin: 15px 0;
+    }
+    .srkHomeImageCollectionWrap {
+        padding: 20px 0;
+    }
+}
