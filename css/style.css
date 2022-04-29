@@ -1531,6 +1531,7 @@
 }
 
 .srkHomeBannerWrap {
+    position: relative;
     overflow: hidden;
 }
 .srkHomeBannerWrap ul {
@@ -1542,7 +1543,10 @@
 .srkHomeBannerWrap ul li a img {
 }
 .srkHomeBannerWrap .swiper-pagination {
-display: flex;justify-content: center;align-items: center;}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .srkHomeBannerWrap .swiper-pagination > span {
     width: 14px;
     height: 14px;
@@ -1617,4 +1621,23 @@ display: flex;justify-content: center;align-items: center;}
         font-size: 14px;
         color: #fff;
     }
+}
+
+.srkHomeFocusWrap {
+    overflow: hidden;
+}
+.srkHomeFocus {
+    padding: 40px 0 10px 0;
+    overflow: hidden;
+    background-color: #f7f7f0;
+    text-align: center;
+}
+.srkHomeFocus h1 {
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+.srkHomeFocus p {
+    font-size: 14px;
+    line-height: 28px;
 }
